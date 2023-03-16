@@ -1,0 +1,3 @@
+install:
+- SWTBOT_FILE="-Dfile=jars/org.eclipse.swtbot.swt.finder.jar"
+- mvn install:install-file $SWTBOT_FILE -DgroupId=com.github.aphtech.repackaged-jars -DartifactId=org.eclipse.swtbot.swt.finder -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
